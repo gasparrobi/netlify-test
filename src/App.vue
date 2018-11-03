@@ -1,7 +1,12 @@
 <template>
   <div id="app">
     <img alt="Vue logo" src="./assets/logo.png">
-    <form name="contact" method="POST" netlify>
+    <form
+      name="ask-qa-panel"
+      method="post"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="ask-team-vue" />
       <p>
         <label>Your Name: <input type="text" name="name" /></label>   
       </p>
